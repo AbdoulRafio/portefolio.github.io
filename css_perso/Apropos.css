@@ -1,0 +1,159 @@
+
+body {
+    background-image: url('../document/fond1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* *********************************************1********************************************** */
+/* Pour modifier l'entête et lui donner une couleur fixe et le pied de page  */
+.navbar {
+    background-color: #02787c !important; /* Couleur fixe pour l'entête */
+    height: 63px;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+}
+
+
+
+/*en tete */
+
+/* Changement de couleur au survol */
+.navbar-nav .nav-item a:hover {
+    background-color: lightblue; !important; /* Couleur jaune au survol */
+    border-radius: 8px;
+}
+
+/* Changement de couleur au clic */
+.navbar-nav .nav-item a:active,
+.navbar-nav .nav-item a:focus {
+    border-bottom: 1px solid white;
+    border-radius: 2px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+
+/* Style pour l'apparence de l'onglet */
+.cv {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: none; /* Couleur de fond */
+            color: white; /* Couleur du texte */
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+.cv a{
+    color: white;
+    text-decoration: none;
+        }
+/* Effet de survol */
+.cv:hover {
+    background-color: lightblue; /* Changement de couleur au survol */
+}
+
+
+#apropos{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: "Times New Roman", Times, serif;
+    margin-left: 50px;
+
+}
+
+
+/*Presentation des trois boutons présentation, langues, softs skills*/
+ .hidden {
+    display: none;
+  }
+
+
+/*#presentationBtn, #languesBtn, #softSkillsBtn {
+    margin: 30px 30px;
+    border-radius: 10px;
+    background-color: #e4eff1;
+    border: 1px solid black;
+
+}*/
+
+/* Changement de couleur au survol */
+#presentationBtn:hover, #languesBtn:hover, #softSkillsBtn:hover {
+    background-color: #02787c !important; /* Couleur jaune au survol */
+    border-radius: 8px;
+}
+
+/* Changement de couleur au clic */
+#presentationBtn:active, #presentationBtn:focus,
+#languesBtn:active, #languesBtn:focus,
+#softSkillsBtn:active, #softSkillsBtn:focus {
+    color: white;
+    background-color: #02787c;
+    border-radius: 10px;
+}
+
+/* centrer les boutons avec de l'espace entre eux */
+
+#container {
+    width: 100%; /* Ajustez la largeur si nécessaire */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#presentationBtn, #languesBtn, #softSkillsBtn {
+    border-radius: 10px;
+    background-color: #e4eff1;
+    border: 1px solid black;
+}
+
+
+/* Espace entre les boutons et la carte */
+#bouton {
+    margin-bottom: 50px; 
+}
+
+/* Ajoute de l'espace vertical entre chaque paire d'images pour les langues*/
+#languesContent div {
+    margin-bottom: 20px; 
+}
+
+/* ========================================================== petit écrans =========================================================================== */
+
+
+@media screen and (min-width: 0px) and (max-width: 599px) {
+    .navbar {
+        width: 100%; /* Définit la largeur à 100% pour remplir la largeur de l'écran */
+        height: auto; /* Définit la hauteur automatiquement pour ajuster le contenu */
+    }
+    .hidden {
+    display: none;
+    }
+    
+
+    .cv {
+		padding: 0px 0px;
+	}
+}
+
+
+/* ============================================================= tablette ===========================================================================  */
+ 
+ @media screen and (min-width: 600px) and (max-width: 1024px) {
+    .navbar {
+        width: 100%; /* Définit la largeur à 100% pour remplir la largeur de l'écran */
+        height: auto; /* Définit la hauteur automatiquement pour ajuster le contenu */
+    }
+    .hidden {
+        display: none;
+    }
+    .cv {
+		padding: 0px 0px;
+	}
+}
+
+

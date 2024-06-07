@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mon site e-portefolio</title>
+		<link rel="stylesheet" type="text/css" href="css_bs/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css_perso/style_bs.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+	</head>
+
+	<body>
+		<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		    <div class="container-fluid">
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+
+			    <!-- Bouton de navigation -->
+			    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+				    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				    	<li class="nav-item">
+				          <a class="nav-link" href="#" style="color: white;"><strong>Acceuil</strong></a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="Apropos.html" style="color: white;"><strong>A propos de moi</strong></a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="experience.html" style="color: white;"><strong>Expérience</strong></a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="formation.html" style="color: white;"><strong>Formation</strong></a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="competence.html" style="color: white;"><strong>Compétences</strong></a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="reference.html" style="color: white;"><strong>Références</strong></a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="portfolio.html" style="color: white;"><strong>Portfolio</strong></a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="contacte.html" style="color: white;"><strong>Me contacter</strong></a>
+				        </li>
+
+				        <!-- Image utilisée comme bouton pour télécharger le CV -->
+						<div class="cv">
+						    <a href="document/Rafio-Bangagne.pdf" download="Rafio-Bangagne.pdf"> <strong> Mon CV </strong>
+						        <!-- <img src="telecharge.jpg" alt="Mon CV"> -->
+						    </a>
+						</div>
+				    </ul>
+
+				    <!-- Bouton de recherche -->
+				
+				    <!-- <form class="d-flex">
+					    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" required>
+					    <button class="btn btn-outline-success" type="submit">Search</button>
+				    </form>
+ -->			
+			    </div>
+		 	</div>
+		</nav>
+		</header>
+
+		<div id="nom"><h2> Abdoul Rafio BANGAGNE </h2></div>
+		
+
+		<!-- insertion logo -->
+		<div id="logoportefolio">
+			<img src="document/logo-portefolio.png" alt="Portefolio">
+		</div>
+
+		<div id="etude">Etudiant en deuxième année de BUT science des données <br>
+			Parcours - Exploration et Modélisation statistique
+		</div>
+
+		<!-- Création du menu de mon profil -->
+
+		<div id="carouselExample" class="carousel slide">
+
+		  	<div class="carousel-inner">
+			    <div class="carousel-item active">
+			    	<p class="d-block w-100">Gestionnaire de suivi des activités chez Orange,</p>
+			    </div>
+			    <div class="carousel-item">
+			    	<p class="d-block w-100">Chargé du reporting de suivi des distributeurs,</p>
+			    </div>
+			    <div class="carousel-item">
+			    	<p class="d-block w-100">Analyse de stratégie commerciale,</p>
+			    </div>
+			    <div class="carousel-item">
+			    	<p class="d-block w-100">Calcul des parts variables des distributeurs</p>
+			    </div>
+			    <!--
+			    <div class="carousel-item">
+			    	<p class="d-block w-100">Programmeur statisticien</p>
+			    </div> -->
+		  	</div>
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			</button>
+				<button class="navbar-toggler" type="button" onclick="toggleNavbar()">
+    			<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+		<script type="text/javascript">		
+			function toggleNavbar() {
+	    	var navbar = document.querySelector('.navbar');
+	    	navbar.classList.toggle('active');
+			}
+		</script>
+		
+
+
+
+		<!-- pied de page -->
+		<footer>
+			
+		</footer>
+		
+
+	
+	
+	
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	</body>
+</html>

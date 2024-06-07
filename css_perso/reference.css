@@ -1,0 +1,133 @@
+body {
+    background-image: url('../document/fond1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* ******************************************************************************************** */
+/* Pour modifier l'entête et lui donner une couleur fixe et le pied de page  */
+.navbar {
+    background-color: #02787c !important; /* Couleur fixe pour l'entête */
+    height: 63px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+
+
+/*en tete */
+
+/* Changement de couleur au survol */
+.navbar-nav .nav-item a:hover {
+    background-color: lightblue; !important; /* Couleur blue au survol */
+    border-radius: 8px;
+}
+
+/* Changement de couleur au clic */
+.navbar-nav .nav-item a:active,
+.navbar-nav .nav-item a:focus {
+    border-bottom: 1px solid white;
+    border-radius: 2px;
+}
+
+
+
+/* Style pour l'apparence de l'onglet */
+.cv {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: none; /* Couleur de fond */
+            color: white; /* Couleur du texte */
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+.cv a{
+    color: white;
+    text-decoration: none;
+        }
+/* Effet de survol */
+.cv:hover {
+    background-color: lightblue; /* Changement de couleur au survol */
+}
+
+.refer {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Pour passer en mode colonne sur les petits écrans */
+}
+
+.ref-card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px; /* Espacement entre les référents */
+}
+
+.ref-card img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.ref-card .info h4 { /* Utilisation de h4 au lieu de h3 selon le HTML fourni */
+    margin-top: 0;
+}
+
+.ref-card .info p {
+    margin: 5px 0;
+}
+
+
+/* centrer le texte : reference */
+.reference {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+
+/* ========================================================== petit écrans =========================================================================== */
+
+
+@media screen and (min-width: 0px) and (max-width: 599px) {
+    .navbar {
+        width: 100%; /* Définit la largeur à 100% pour remplir la largeur de l'écran */
+        height: auto; /* Définit la hauteur automatiquement pour ajuster le contenu */
+    }
+    .hidden {
+    display: none;
+    }
+    .cv {
+        padding: 0px;
+    }
+}
+
+
+ /* ============================================================= tablette ===========================================================================  */
+ 
+ @media screen and (min-width: 600px) and (max-width: 1024px) {
+       .navbar {
+        width: 100%; /* Définit la largeur à 100% pour remplir la largeur de l'écran */
+        height: auto; /* Définit la hauteur automatiquement pour ajuster le contenu */
+    }
+    .hidden {
+    display: none;
+    }
+    .cv {
+        padding: 0px;
+    }
+    
+}

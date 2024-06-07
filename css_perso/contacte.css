@@ -1,0 +1,167 @@
+
+body {
+    background-image: url('../document/fond1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ******************************************************************************************** */
+/* Pour modifier l'entête et lui donner une couleur fixe et le pied de page  */
+.navbar {
+    background-color: #02787c !important; /* Couleur fixe pour l'entête */
+    height: 63px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+
+
+/*en tete */
+
+/* Changement de couleur au survol */
+.navbar-nav .nav-item a:hover {
+    background-color: lightblue; !important; /* Couleur blue au survol */
+    border-radius: 8px;
+}
+
+/* Changement de couleur au clic */
+.navbar-nav .nav-item a:active,
+.navbar-nav .nav-item a:focus {
+    border-bottom: 1px solid white;
+    border-radius: 2px;
+}
+
+
+
+/* Style pour l'apparence de l'onglet */
+.cv {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: none; /* Couleur de fond */
+            color: white; /* Couleur du texte */
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+.cv a{
+    color: white;
+    text-decoration: none;
+        }
+/* Effet de survol */
+.cv:hover {
+    background-color: lightblue; /* Changement de couleur au survol */
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #02787c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ======================= bas de page ============= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #02787c;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: 0.15rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #0077b5;
+}
+
+/* ========================================================== petit écrans =========================================================================== */
+
+
+@media screen and (min-width: 0px) and (max-width: 599px) {
+    .navbar {
+        width: 100%; /* Définit la largeur à 100% pour remplir la largeur de l'écran */
+        height: auto; /* Définit la hauteur automatiquement pour ajuster le contenu */
+    }
+    .hidden {
+    display: none;
+    }
+    .cv {
+        padding: 0px;
+    }
+}
+
+
+ /* ============================================================= tablette ===========================================================================  */
+ 
+ @media screen and (min-width: 600px) and (max-width: 1024px) {
+       .navbar {
+        width: 100%; /* Définit la largeur à 100% pour remplir la largeur de l'écran */
+        height: auto; /* Définit la hauteur automatiquement pour ajuster le contenu */
+    }
+    .hidden {
+    display: none;
+    }
+    .cv {
+        padding: 0px;
+    }
+    
+}
+
+

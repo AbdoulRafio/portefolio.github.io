@@ -1,0 +1,159 @@
+/* Pour rendre l'image en fond transparente à 80% */
+body {
+    background-image: url('../document/Data-analist.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ******************************************************************************************** */
+/* Pour modifier l'entête et lui donner une couleur fixe et le pied de page  */
+.navbar {
+    background-color: #02787c !important; /* Couleur fixe pour l'entête */
+    height: 63px;
+    width: 100%;
+	font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+/* footer { */
+    /* width: 100%; */
+    /* margin-top: 30px; */
+    /* height: 62px; */
+    /* background-color: #02787c; */
+/* } */
+
+/* ******************************************************************************************** */
+#nom {
+    margin-top: 30px;
+    margin-left: 50px;
+    font-family: "Times New Roman", Times, serif;
+}
+#etude {
+    margin-left: 40px;
+}
+
+/* ******************************************************************************************** */
+
+/*en tete */
+
+/* Changement de couleur au survol */
+.navbar-nav .nav-item a:hover {
+    background-color: lightblue; !important; /* Couleur jaune au survol */
+    border-radius: 8px;
+}
+
+/* Changement de couleur au clic */
+.navbar-nav .nav-item a:active,
+.navbar-nav .nav-item a:focus {
+    border-bottom: 1px solid white;
+    border-radius: 2px;
+    font-family: "Times New Roman", Times, serif;
+}
+/* cibler le logo */
+
+#logoportefolio {
+    margin-top: 40px;
+    margin-left: 100px;
+    opacity: 0.5;
+}
+
+/* ecriture  au dans le menu*/
+#carouselExample .carousel-item p {
+    /* Styles pour les paragraphes à l'intérieur de .carousel-item */
+    /* Par exemple : */
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #c00000;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#carouselExample {
+    width: 400px;
+    padding: 20px;
+    margin-top: 60px;
+   }
+
+
+/* Style pour l'apparence de l'onglet */
+.cv {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: none; /* Couleur de fond */
+            color: white; /* Couleur du texte */
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            font-family: "Times New Roman", Times, serif;
+            justify-content: center; /* Alignement horizontal */
+            align-items: center; /* Alignement vertical */
+        }
+.cv a{
+    color: white;
+    text-decoration: none;
+        }
+/* Effet de survol */
+.cv:hover {
+    background-color: lightblue; /* Changement de couleur au survol */
+}
+
+#contact {
+    border-right: 100
+}
+
+/* ========================================================== petit écrans =========================================================================== */
+
+
+@media screen and (min-width: 0px) and (max-width: 599px) {
+    .navbar {
+        width: 100%; /* Définit la largeur à 100% pour remplir la largeur de l'écran */
+        height: auto; /* Définit la hauteur automatiquement pour ajuster le contenu */
+	}
+	#nom {
+		margin-top: 30px;
+		font-family: "Times New Roman", Times, serif;
+	}
+
+	#etude {
+		margin left: 10px; /* Centrer le texte horizontalement */
+	}
+
+	#logoportefolio {
+		margin-top: 40px;
+		display: flex; /* Utiliser Flexbox pour centrer l'image */
+		opacity: 0.5;
+	}
+	.cv {
+		padding: 0px 0px;
+	}
+}
+
+
+ /* ============================================================= tablette ===========================================================================  */
+ 
+ @media screen and (min-width: 600px) and (max-width: 1024px) {
+    .navbar {
+        width: 100%; /* Définit la largeur à 100% pour remplir la largeur de l'écran */
+        height: auto; /* Définit la hauteur automatiquement pour ajuster le contenu */
+	}
+	#nom {
+		margin-top: 30px;
+		font-family: "Times New Roman", Times, serif;
+	}
+
+	#etude {
+		margin left: 10px; /* Centrer le texte horizontalement */
+	}
+
+	#logoportefolio {
+		margin-top: 40px;
+		display: flex; /* Utiliser Flexbox pour centrer l'image */
+		opacity: 0.5;
+	}
+	.cv {
+        padding: 0px 0px;
+        float: left;
+    }
+}

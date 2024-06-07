@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan d'expérience - la minimisation</title>
+    <link rel="stylesheet" href="css_perso/serie_temporelle.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Application de la Méthode de Minimisation avec des données simulées pour l'attribution des traitements</h2>
+    
+    
+    
+    <img src="document/minimisation2.jpg" alt="Contexte" width="95%">
+    <h3>1. Contexte</h3>
+    <p>
+        Dans le cadre d'un projet académique de BUT 2 à l'IUT de Paris - Rives de Seine (Université Paris Cité), j'ai étudié les méthodes de randomisation pour garantir la comparabilité des groupes de traitement dans les essais randomisés. Je me suis concentré sur la méthode de minimisation de Pocock et Simon (1975) et l'ai comparée à la randomisation simple en utilisant les tests de Fisher et de Cochran-Mantel-Haenszel (CMH). La randomisation vise à éviter les biais de sélection et à garantir l'équilibre et l'imprédictibilité dans l'attribution des traitements, ce qui est essentiel pour des résultats fiables dans le domaine de la santé.
+    </p>
+
+
+    <h3>2. Livrables, outils et logiciels, consignes particulières, destinataire</h3>
+    <p>
+        Ce projet académique vise à comparer la minimisation et la randomisation simple en termes de déséquilibre entre les groupes et la signification statistique des résultats. Les outils utilisés incluent des algorithmes de minimisation et de randomisation simple implémentés en R, avec des données simulées pour 20 et 50 patients. Les livrables attendus pour ce projet sont un rapport détaillé et une présentation orale de 20 minutes maximum.
+    </p>
+
+    
+    <h3>3. La démarche</h3>
+    <img src="document/minimisation1.png" alt="Contexte" width="95%">
+    <p>
+        Pour mener cette étude, j'ai créé deux bases de données de patients, l'une avec 20 patients et l'autre avec 50, construites de manière similaire. J'ai généré aléatoirement les âges des patients selon une distribution normale avec une moyenne de 65 ans et un écart-type de 10 ans, puis leur ai attribué un pays selon des probabilités définies. Ensuite, j'ai développé un algorithme de minimisation en suivant la méthode de Pocock et Simon, ainsi qu'un algorithme de randomisation simple. Ces algorithmes m'ont permis d'attribuer aléatoirement un traitement à chaque patient, créant ainsi la variable de traitement pour chaque groupe. <br>
+        <br>
+        J'ai ensuite simulé 1000 études pour chaque méthode et chaque base de données, en introduisant des éléments aléatoires dans l'algorithme de minimisation pour éviter la prévisibilité. Enfin, j'ai défini les probabilités de succès des traitements en fonction du pays d'origine des patients et ai appliqué des tests statistiques pour analyser les résultats de mes simulations et évaluer l'efficacité et l'équilibre des deux méthodes de randomisation.
+    </p>
+
+    
+    <h3>4. Les résultats</h3>
+    <img src="document/resultat.jpg" alt="Contexte" width="95%">
+    <p>
+        La minimisation a montré un meilleur équilibre entre les groupes de traitement par rapport à la randomisation simple, avec des écarts moindres observés. Les p-valeurs des tests de Fisher et CMH ont montré des distributions similaires entre les méthodes, en raison de la petite taille des échantillons. Cependant, la minimisation a maintenu un meilleur équilibre même avec des facteurs aléatoires variés, confirmant sa supériorité sur la randomisation simple pour des tailles d'échantillons plus grandes.<a href="https://drive.google.com/file/d/17ku0Nq1zS4MAkusqZjrEGvBbVCAJ3tmG/view?usp=sharing" target="_blank"> Pour visualiser le rapport, veuillez cliquer ici.</a>
+
+    </p>
+    <p>
+        L’une des difficultés de ce projet était de comprendre l’algorithme de minimisation et de le transcrire en R. Ce qui m’a semblé moins pertinent dans cette analyse, c’est l’utilisation de données simulées. Les données simulées sont souvent idéalisées et ne reflètent pas les variabilités et les imprévus rencontrés dans des études cliniques réelles. Cela peut limiter la pertinence des conclusions tirées et ne permet pas d’acquérir une expérience pratique de la gestion de données brutes, qui est essentielle pour préparer à des situations réelles dans le domaine de la recherche clinique. J'aurais préféré travailler avec des données réelles pour mieux appréhender les défis et les solutions applicables dans un contexte concret.
+    </p>
+
+    
+    <h3>5. Les compétences acquises</h3>
+    <!-- <img src="document/serie_comp.jpg" alt="Contexte" width="95%"> -->
+    <p>
+        Les compétences acquises pour cette étude incluent la maîtrise de la programmation en R pour l'implémentation des algorithmes, la compréhension approfondie des méthodes de randomisation, et la capacité à analyser statistiquement les données en utilisant des tests tels que Fisher et CMH. J'ai également développé des compétences en gestion et manipulation de données simulées. Une bonne compréhension des concepts de randomisation et de minimisation dans un contexte d'essais cliniques s'est avérée nécessaire.
+    </p>
+</div>
+
+</body>
+</html>

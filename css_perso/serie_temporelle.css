@@ -1,0 +1,34 @@
+body {
+            font-family: Calibri, sans-serif; 
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            height: auto;
+            max-height: 300px; /* Ajuster cette valeur selon les besoins */
+        }
+         p {
+            font-family: Calibri, sans-serif; /* Police pour les paragraphes */
+            text-align: justify;
+            margin: 20px;
+            padding: 20px; /* Espace intérieur */
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Ombre pour effet 3D */
+            border-radius: 5px; /* Coins arrondis pour un effet plus doux */
+            background-color: #f9f9f9; /* Couleur de fond pour les paragraphes */
+        }
+        h2 {
+            font-family: "Times New Roman", Times, serif; /* Police pour le titre général */
+            padding: 20px; /* Espace intérieur */
+            border: 2px solid black; /* Bordure noire */
+            margin: 20px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Ombre pour effet 3D */
+            border-radius: 10px; /* Coins arrondis pour un effet plus doux */
+        }
